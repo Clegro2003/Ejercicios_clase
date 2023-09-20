@@ -4,6 +4,8 @@
  */
 package ejercicio2.taller5;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author carlo
@@ -15,9 +17,20 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Equipo a = new Equipo("Junior", "Barranquilla", "Arturo Reyes", 02);
+        Equipo e = new Equipo("Junior", "Barranquilla", "Arturo Reyes", 01);
+        Equipo e1 = new Equipo("America de cali", "Cali", "Lucas Gonzales", 04);
+        Equipo e2 = new Equipo("Santa Fe", "Bogota", "Hugo Bodhert", 02);
+        Equipo e3 = new Equipo("Millonarios", "Bogota", "Alberto Gamero", 03);
 
-        System.out.println("Informacion Equipo" + a);
+        
+        RegistroCampeonato rc =new RegistroCampeonato("SerieColombia", LocalDate.MAX, 1+"millon", 3);
+        
+        
+        
+        
+
+
+    
     }
 
 }
