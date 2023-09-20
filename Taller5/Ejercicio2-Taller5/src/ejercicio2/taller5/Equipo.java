@@ -19,7 +19,8 @@ public class Equipo {
     private String city;
     private String nametrainerman;
     private int numinscrip;
-
+    private RegistroCampeonato Campeonato; 
+            
     public Equipo() {
     }
 
@@ -28,6 +29,14 @@ public class Equipo {
         this.city = city;
         this.nametrainerman = nametrainerman;
         this.numinscrip = numinscrip;
+    }
+
+    public Equipo(String name, String city, String nametrainerman, int numinscrip, RegistroCampeonato Campeonato) {
+        this.name = name;
+        this.city = city;
+        this.nametrainerman = nametrainerman;
+        this.numinscrip = numinscrip;
+        this.Campeonato = Campeonato;
     }
 
     public String getName() {
@@ -62,6 +71,16 @@ public class Equipo {
         this.numinscrip = numinscrip;
     }
 
+    public RegistroCampeonato getCampeonato() {
+        return Campeonato;
+    }
+
+    public void setCampeonato(RegistroCampeonato Campeonato) {
+        this.Campeonato = Campeonato;
+    }
+
+    
+  
     @Override
     public String toString() {
         return "name: " + name
